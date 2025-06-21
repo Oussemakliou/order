@@ -262,6 +262,14 @@ The application will automatically use an available port (e.g., 3001, 3002).
 ---
 
 ## 📸 Screenshots
+![1](https://github.com/user-attachments/assets/155f5940-b336-4ed5-a227-ebe748e02657)
++![3](https://github.com/user-attachments/assets/a3ec77d6-47c5-4996-80c8-4a58a4a25dd4)
+
+
+![4](https://github.com/user-attachments/assets/c3fe32fc-6710-46e1-a659-af76e016b2d4)
+
+![2](https://github.com/user-attachments/assets/30a00e54-0117-42c9-83bf-f5ee15b565aa)
+
 
 The application includes:
 - **Responsive sidebar** with Home/Dashboard navigation
