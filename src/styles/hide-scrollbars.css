@@ -1,0 +1,76 @@
+/* Masquer toutes les barres de défilement */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Safari et Chrome */
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Masquer les scrollbars du body et html */
+html, body {
+  overflow-x: hidden; /* Empêcher le défilement horizontal */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+}
+
+/* Permettre le défilement vertical mais masquer la barre */
+body {
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+/* Pour les tableaux et conteneurs avec défilement */
+.overflow-auto::-webkit-scrollbar,
+.overflow-x-auto::-webkit-scrollbar,
+.overflow-y-auto::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.overflow-auto,
+.overflow-x-auto,
+.overflow-y-auto {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Empêcher le zoom horizontal et les débordements */
+html {
+  overflow-x: hidden !important;
+  max-width: 100vw;
+}
+
+body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
+  position: relative;
+}
+
+/* Empêcher les débordements dans les containers */
+.container, .max-w-4xl, .max-w-6xl {
+  max-width: 100% !important;
+  overflow-x: hidden;
+}
+
+/* Style pour les éléments qui peuvent déborder */
+main {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Masquer le scrollbar horizontal spécifiquement */
+::-webkit-scrollbar:horizontal {
+  display: none !important;
+  height: 0 !important;
+}
