@@ -1,0 +1,126 @@
+# 🏢 Tuniform - Order Management System
+
+> **Full Stack Developer Intern Practical Test**
+
+A modern order management dashboard built with Next.js, shadcn/ui, and MySQL.
+
+## 🎯 Features
+
+- ✅ **Dashboard** with order management
+- ✅ **Add Orders** via modal form
+- ✅ **MySQL Database** integration
+- ✅ **Dark/Light Mode** toggle
+- ✅ **Responsive Design**
+- ✅ **shadcn/ui Components**
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js 15, React, TypeScript
+- **UI Library:** shadcn/ui, Tailwind CSS
+- **Database:** MySQL
+- **Icons:** Lucide React
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- MySQL Server
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/votre-username/tuniform-order-management.git
+cd tuniform-order-management
+```
+
+2. **Install dependencies**
+```bash
+npm install
+```
+
+3. **Configure MySQL Database**
+```bash
+# Update database credentials in src/lib/db.ts
+Host: localhost
+Port: 3306
+User: root
+Password: 123456789
+Database: tuniform_orders
+```
+
+4. **Start the development server**
+```bash
+npm run dev
+```
+
+5. **Open your browser**
+```
+http://localhost:3000
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── app/                 # Next.js App Router
+│   ├── dashboard/       # Dashboard page
+│   └── api/orders/      # API routes
+├── components/          # React components
+│   ├── layout/         # Layout components
+│   ├── order/          # Order-related components
+│   └── ui/             # shadcn/ui components
+├── lib/                # Utilities
+└── styles/             # CSS files
+```
+
+## 🗄️ Database Schema
+
+```sql
+CREATE TABLE orders (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  customer_name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+```
+
+## 🎨 Screenshots
+
+### 🏠 Home Page
+- Welcome message with Tuniform logo
+- Navigation to Dashboard
+
+### 📊 Dashboard
+- Orders table with shadcn/ui components
+- Add new order modal
+- Dark/Light mode toggle
+
+## 🔧 API Endpoints
+
+- `GET /api/orders` - Fetch all orders
+- `POST /api/orders` - Create new order
+
+## 👨‍💻 Development
+
+Built as part of the **Tuniform Full Stack Developer Intern** practical test.
+
+### Requirements Met:
+- ✅ Next.js framework
+- ✅ shadcn/ui components (Tables, Dialogs)
+- ✅ MySQL database integration
+- ✅ Sidebar navigation layout
+- ✅ Order management functionality
+
+## 📄 License
+
+This project is created for evaluation purposes.
+
+---
+
+**Developed by:** [Votre Nom]  
+**Contact:** [votre.email@example.com]  
+**Test:** Tuniform Full Stack Developer Intern
